@@ -1,0 +1,484 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #f5f6fa;
+}
+
+/* ---------------------Navbar-Links--------------------- */
+header {
+    width: 100%;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0px 0px 4px;
+    background-color: #ff2c2c;
+
+}
+
+.navbar-links {
+    width: 100%;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    position: relative;
+}
+
+#check {
+    display: none;
+}
+
+#menu-btn {
+    font-size: 25px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 4px 10px;
+    margin: 8px 20px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar-links .logo {
+    flex-basis: 200px;
+    height: 60px;
+}
+
+.navbar-links .logo h1 {
+    line-height: 60px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.navbar-links ul {
+    display: flex;
+}
+
+.navbar-links ul li {
+    list-style: none;
+    line-height: 60px;
+    margin: 0px 15px;
+}
+
+.navbar-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: REM;
+}
+
+.navbar-links ul li a.active {
+    color: yellow;
+}
+
+.navbar-links ul li a:hover:not(.active) {
+    color: #f7adad;
+}
+
+main {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 0px;
+    background-color: white;
+}
+
+/* ---------------------Image Slider--------------------- */
+.slider {
+    width: 100%;
+    height: 580px;
+    display: flex;
+    flex-wrap: wrap;
+    background: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider .slide {
+    width: 50%;
+    height: 550px;
+}
+
+.slider .left {
+    padding: 90px 50px;
+    color: white;
+}
+
+.slider .left h3 {
+    font-family: sans-serif;
+    color: yellow;
+    font-size: 35px;
+    font-weight: 300;
+    text-shadow: 1px 1px 2px black;
+}
+
+.slider .left h2 {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.slider .left h1 {
+    color: white;
+    font-size: 55px;
+    text-shadow: 1px 1px 4px black;
+    font-weight: bold;
+}
+
+.slider .left p {
+    font-size: 18px;
+    margin-bottom: 50px;
+    font-family: Salsa;
+    text-shadow: 0.5px 0.5px 1px black;
+}
+
+.slider .left a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.slider .left a:hover {
+    color: white;
+    background-color: rgb(10, 120, 209);
+    border: 2px solid white;
+    box-shadow: 0px 0px 4px;
+
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*=======================Utilites-Classes=======================*/
+.page-container {
+    width: 100%;
+}
+
+.page-container h1 {
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: red;
+    padding: 50px 0px 0px 0px;
+
+}
+
+.underline {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.line {
+    width: 50px;
+    height: 2px;
+    margin-top: -5px;
+    background-color: red;
+    text-align: center;
+
+}
+#btn-icon{
+    margin-left: 7px;
+    font-size: 18px;
+}
+
+/* ---------------------About-Container--------------------- */
+.about-flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-box {
+    flex-basis: 25%;
+    height: 350px;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-box img {
+    box-shadow: 20px 20px 4px 0px lightseagreen;
+}
+
+.right-box {
+    flex-basis: 65%;
+    height: 400px;
+    padding: 30px 30px 0px 0px;
+}
+
+.right-box h2 {
+    font-size: 25px;
+    font-family: Poppins;
+    font-weight: bold;
+    color: rgb(7, 2, 85);
+}
+
+.right-box p {
+    font-family: Salsa;
+}
+
+.right-box .tables {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-box .tables table {
+    width: 100%;
+    font-size: 16px;
+
+}
+
+.right-box .tables table th,
+td {
+    font-family: Salsa;
+}
+
+.button {
+    margin-top: 50px;
+}
+
+.button #btn1,
+#btn2 {
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 10px 15px;
+    border: 2px solid rgb(10, 120, 209);
+    border-radius: 20px;
+}
+
+.button #btn1 {
+    color: white;
+    background-color: rgb(10, 120, 209);
+}
+
+.button #btn1:hover {
+    color: black;
+    background: rgb(248, 248, 248);
+}
+
+.button #btn2 {
+    color: black;
+    background-color: white;
+}
+
+.button #btn2:hover {
+    color: white;
+    background-color: rgb(10, 120, 209);
+}
+
+/* ---------------------Services-Container--------------------- */
+
+.service-flex {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 30px 0px;
+}
+
+.service-image {
+    width: 40%;
+    text-align: center;
+}
+
+.service-title {
+    width: 60%;
+    padding: 0px 70px;
+}
+
+.service-title h2 {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Poppins;
+}
+
+.service-title p {
+    font-family: Poppins;
+    text-align: justify;
+}
+
+/* ---------------------Skills-Container--------------------- */
+.skill-flex {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill-card {
+    flex-basis: 22%;
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px 0px;
+    box-shadow: 0px 0px 0px 1px rgb(224, 224, 224);
+}
+
+.skill-img {
+    width: 100px;
+}
+
+.skill-title {
+    width: 180px;
+    padding: 15px;
+}
+
+.skill-title h2 {
+    font-size: 25px;
+}
+
+.skill-title p {
+    color: rgb(7, 214, 7);
+}
+
+/* ---------------------Project-Container--------------------- */
+
+.project-flex {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project-card {
+    width: 22%;
+    height: 180px;
+    margin: 20px 0px;
+    box-shadow: 0px 0px 0px 1px lightgray;
+    background-color: white;
+    cursor: pointer;
+    position: relative;
+}
+
+.project-card:hover{
+    box-shadow: 0px 0px 4px;
+}
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+}
+
+/* ---------------------Contact-Container--------------------- */
+
+.contact-flex {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #2ed573;
+    color: white;
+}
+
+.contact {
+    flex-basis: 48%;
+    padding: 15px 10px;
+}
+
+.contact .form-control {
+    background-color: #f5f6fa;
+}
+
+.contact .box {
+    width: 100%;
+}
+
+/* ---------------------Footer-Container--------------------- */
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #2C3A47;
+    color: white;
+}
+
+.footer .social-icon {
+    width: 100%;
+    text-align: center;
+}
+
+.footer .social-icon h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+}
+
+.footer .social-icon ul {
+    display: flex;
+    justify-content: center;
+}
+
+.footer .social-icon ul li {
+    list-style: none;
+    margin: 10px 5px;
+}
+
+.footer .social-icon ul img {
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px 1px white;
+}
+
+.footer .social-icon ul img:hover {
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px -1px white;
+}
+
+.social-icon p {
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* =========================================Media Query========================================= */
+@media only screen and (min-width: 1600px) {
+    main {
+        width: 1500px;
+        margin: auto;
+    }
+
+    .navbar-links {
+        width: 1200px;
+        margin: auto;
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+        position: absolute;
+        margin-top: 60px;
+        left: -100%;
+        border-top: 1px solid white;
+        background-color: #ff2c2c;
+        transition: 0.5s;
+    }
+
+    #menu-btn {
+        display: block;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+}
