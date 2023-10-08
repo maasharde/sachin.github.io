@@ -142,7 +142,6 @@ main {
 .slider .left {
     padding: 90px 50px;
     color: white;
-    border: 1px solid red;
 }
 
 .slider .left h3 {
@@ -194,8 +193,6 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid red;
-
 }
 
 /* ---------------------About-Container--------------------- */
@@ -243,13 +240,11 @@ main {
 .right-box .tables table {
     width: 100%;
     font-size: 16px;
-    border: 1px solid red;
 }
 
 .right-box .tables table th,
 td {
     font-family: Salsa;
-    border: 1px solid red;
 }
 
 .button {
