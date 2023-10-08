@@ -50,7 +50,7 @@ header {
     top: 0;
     z-index: 100;
     box-shadow: 0px 0px 4px;
-    background-color: #ff2c2c;
+    background-color: #546de5;
 
 }
 
@@ -132,6 +132,7 @@ main {
     background: url(background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: black;
 }
 
 .slider .slide {
@@ -499,7 +500,7 @@ td {
         margin-top: 60px;
         left: -100%;
         border-top: 1px solid white;
-        background-color: #ff2c2c;
+        background-color: #546de5;
         transition: 0.5s;
     }
 
@@ -514,6 +515,9 @@ td {
     /* ---------------------Image Slider--------------------- */
     .slider{
         height: auto;
+        background: url(download.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     .slider .slide{
         width: 100%;
@@ -531,8 +535,11 @@ td {
         width: 400px;
         height: 300px;
     }
+    .slider .left h2{
+        font-size: 30px;
+    }
     .slider .left h1{
-        font-size: 40px;
+        font-size: 35px;
     }
 
     /* ---------------------About-Section--------------------- */
@@ -560,18 +567,23 @@ td {
         width: 100%;
         padding: 0px 30px;
     }
+
+    .skill-card{
+        flex-basis: 90%;
+    }
 /* ---------------------Project-Section--------------------- */
     .project-card{
         width: 44%;
     }
 
+/* ---------------------Contact-Section--------------------- */
     .send-email input{
-        width: 350px;
+        width: 300px;
     }
     
 }
 @media only screen and (max-width: 600px) {
-    /* ---------------------Project-Section--------------------- */
+    
     .address-flex{
         flex-direction: column;
         height: auto;
