@@ -8,6 +8,39 @@
 body {
     background-color: #f5f6fa;
 }
+/*=======================Utilites-Classes=======================*/
+.page-container {
+    width: 100%;
+}
+
+.page-container h1 {
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: red;
+    padding: 50px 0px 0px 0px;
+
+}
+
+.underline {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.line {
+    width: 50px;
+    height: 2px;
+    margin-top: -5px;
+    background-color: red;
+    text-align: center;
+
+}
+#btn-icon{
+    margin-left: 7px;
+    font-size: 18px;
+}
 
 /* ---------------------Navbar-Links--------------------- */
 header {
@@ -93,7 +126,7 @@ main {
 /* ---------------------Image Slider--------------------- */
 .slider {
     width: 100%;
-    height: 580px;
+    height: 570px;
     display: flex;
     flex-wrap: wrap;
     background: url(background.jpg);
@@ -109,6 +142,7 @@ main {
 .slider .left {
     padding: 90px 50px;
     color: white;
+    border: 1px solid red;
 }
 
 .slider .left h3 {
@@ -160,41 +194,8 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid red;
 
-}
-
-/*=======================Utilites-Classes=======================*/
-.page-container {
-    width: 100%;
-}
-
-.page-container h1 {
-    text-align: center;
-    font-size: 30px;
-    font-family: sans-serif;
-    color: red;
-    padding: 50px 0px 0px 0px;
-
-}
-
-.underline {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-
-}
-
-.line {
-    width: 50px;
-    height: 2px;
-    margin-top: -5px;
-    background-color: red;
-    text-align: center;
-
-}
-#btn-icon{
-    margin-left: 7px;
-    font-size: 18px;
 }
 
 /* ---------------------About-Container--------------------- */
@@ -242,12 +243,13 @@ main {
 .right-box .tables table {
     width: 100%;
     font-size: 16px;
-
+    border: 1px solid red;
 }
 
 .right-box .tables table th,
 td {
     font-family: Salsa;
+    border: 1px solid red;
 }
 
 .button {
@@ -381,25 +383,58 @@ td {
 
 .contact-flex {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: #2ed573;
+}
+
+.send-email{
+    flex-basis: 100%;
+    padding: 50px;
+    text-align: center;
+}
+.send-email input{
+    width: 550px;
+    height: 47px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    padding: 5px 20px;
+    box-shadow: 0px 0px px 0px;
+    background-color: rgb(233, 233, 233);
+}
+.send-email button{
+    width: 100px;
+    height: 40px;
+    margin-left: -110px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    border: 2px solid orangered;
+    
+}
+.send-email button:hover{
+    background-color: orangered;
     color: white;
 }
-
-.contact {
-    flex-basis: 48%;
-    padding: 15px 10px;
-}
-
-.contact .form-control {
-    background-color: #f5f6fa;
-}
-
-.contact .box {
+.address-flex{
     width: 100%;
+    height: 150px;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
 }
+.con{
+    width: 250px;
+    height: 150px;
+    padding: 10px 5px;
+    border-radius: 10px;
+    color: gray;
+   
+}
+.con p{
+    font-family: Salsa;
+}
+
+
 
 /* ---------------------Footer-Container--------------------- */
 .footer {
@@ -447,20 +482,20 @@ td {
 }
 
 /* =========================================Media Query========================================= */
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1800px) {
     main {
-        width: 1500px;
+        width: 1700px;
         margin: auto;
     }
 
     .navbar-links {
-        width: 1200px;
+        width: 1700px;
         margin: auto;
     }
 }
 
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 924px) {
 
     .navbar-links ul {
         width: 100%;
@@ -481,4 +516,73 @@ td {
         left: 0;
     }
 
+    /* ---------------------Image Slider--------------------- */
+    .slider{
+        height: auto;
+    }
+    .slider .slide{
+        width: 100%;
+        height: 400px;
+        flex-direction: column;
+    }
+    .slider .left {
+        padding: 30px;
+    }
+    
+    #slide-image{
+        height: 350px;
+    }
+    .right img{
+        width: 400px;
+        height: 300px;
+    }
+    .slider .left h1{
+        font-size: 40px;
+    }
+
+    /* ---------------------About-Section--------------------- */
+    .about-flex{
+        flex-direction: column;
+    }
+    .right-box{
+        padding: 30px;
+    }
+    .right-box .tables{
+        width: 100%;
+        flex-direction: column;
+    }
+ /* ---------------------Service-Section--------------------- */
+    .service-flex{
+        flex-direction: column;
+    }
+    #wd{
+        flex-direction: column-reverse;
+    }
+    .service-image{
+        width: 100%;
+    }
+    .service-title{
+        width: 100%;
+        padding: 0px 30px;
+    }
+/* ---------------------Project-Section--------------------- */
+    .project-card{
+        width: 44%;
+    }
+
+    .send-email input{
+        width: 350px;
+    }
+    
+}
+@media only screen and (max-width: 600px) {
+    /* ---------------------Project-Section--------------------- */
+    .address-flex{
+        flex-direction: column;
+        height: auto;
+    }
+    .con{
+        width: 100%;
+        height: 120px;
+    }
 }
